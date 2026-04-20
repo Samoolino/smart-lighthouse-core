@@ -3,42 +3,12 @@ import { Lightbulb, ShieldCheck, Leaf, BarChart3, Cpu, CloudCog } from "lucide-r
 import lighthouse from "@/assets/lighthouse.jpg";
 
 const pillars = [
-  {
-    icon: Lightbulb,
-    name: "Smart Lighthouse Network",
-    body: "Coastal towers reframed as intelligence nodes — sensors, optics, comms and edge compute working as one mesh.",
-    accent: "ocean",
-  },
-  {
-    icon: ShieldCheck,
-    name: "Safety Intelligence",
-    body: "Detection, classification and response coordination from swimmer distress to event-zone breaches.",
-    accent: "coral",
-  },
-  {
-    icon: Leaf,
-    name: "Environmental Intelligence",
-    body: "Continuous sensing of sea state, water quality, biodiversity signals and weather risk.",
-    accent: "emerald",
-  },
-  {
-    icon: BarChart3,
-    name: "ESG Reporting Engine",
-    body: "Automated, auditable ESG metrics for events, infrastructure, sponsors and policymakers.",
-    accent: "teal",
-  },
-  {
-    icon: Cpu,
-    name: "AI Control Stack",
-    body: "Trained intelligence stack tuned for coastal contexts — perception, prediction and dispatch.",
-    accent: "azure",
-  },
-  {
-    icon: CloudCog,
-    name: "Cloud Command Center",
-    body: "Interoperable cloud command with open APIs, federated data, and operator dashboards.",
-    accent: "ocean",
-  },
+  { icon: Lightbulb, name: "Smart Lighthouse Network", body: "Coastal towers reframed as intelligence nodes — sensors, optics, comms and edge compute working as one mesh.", accent: "bg-ocean/10 text-ocean" },
+  { icon: ShieldCheck, name: "Safety Intelligence", body: "Detection, classification and response coordination from swimmer distress to event-zone breaches.", accent: "bg-coral/10 text-coral" },
+  { icon: Leaf, name: "Environmental Intelligence", body: "Continuous sensing of sea state, water quality, biodiversity signals and weather risk.", accent: "bg-emerald/10 text-emerald" },
+  { icon: BarChart3, name: "ESG Reporting Engine", body: "Automated, auditable ESG metrics for events, infrastructure, sponsors and policymakers.", accent: "bg-teal/10 text-teal" },
+  { icon: Cpu, name: "AI Control Stack", body: "Trained intelligence stack tuned for coastal contexts — perception, prediction and dispatch.", accent: "bg-azure/10 text-azure" },
+  { icon: CloudCog, name: "Cloud Command Center", body: "Interoperable cloud command with open APIs, federated data, and operator dashboards.", accent: "bg-ocean/10 text-ocean" },
 ];
 
 export const SystemSection = () => {
@@ -87,7 +57,7 @@ export const SystemSection = () => {
                 className="reveal group rounded-3xl bg-card p-6 border border-border/60 shadow-soft hover-lift"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
-                <div className={`w-11 h-11 rounded-2xl bg-${p.accent}/10 flex items-center justify-center text-${p.accent} mb-4`}>
+                <div className={`w-11 h-11 rounded-2xl ${p.accent} flex items-center justify-center mb-4`}>
                   <p.icon className="w-5 h-5" />
                 </div>
                 <div className="font-display text-xl">{p.name}</div>
