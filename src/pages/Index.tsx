@@ -1,6 +1,7 @@
 import { Nav } from "@/components/lit/Nav";
 import { Hero } from "@/components/lit/Hero";
 import { SystemSection } from "@/components/lit/SystemSection";
+import { VideoSection } from "@/components/lit/VideoSection";
 import { Teasers } from "@/components/lit/Teasers";
 import { CatalogueSection } from "@/components/lit/CatalogueSection";
 import { ScenariosSection } from "@/components/lit/ScenariosSection";
@@ -33,6 +34,7 @@ const Index = () => {
     <main className="bg-background text-foreground">
       <Nav />
       <Hero />
+      <VideoSection />
       <SystemSection />
       <Teasers />
       <CatalogueSection />
